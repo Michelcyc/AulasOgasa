@@ -3,7 +3,7 @@ load_library("harbinger")
 source("my_utils.R")
 data("har_examples")
 
-dataset <- har_examples[[4]]
+dataset <- har_examples[[18]]
 
 indexDaSerie <- 1:length(dataset$serie)
 plot_ts(x=indexDaSerie, y=dataset$serie)
