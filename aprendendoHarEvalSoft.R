@@ -1,3 +1,5 @@
+# Algumas notas sobre o funcionamento de har_eval_soft
+
 har_eval_soft <- function(sw_size = 15) {
   obj <- har_eval()
   obj$sw_size <- sw_size

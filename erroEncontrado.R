@@ -21,3 +21,14 @@ softEval <- evaluate(har_eval_soft(), fitted_detection_model$event, dataset$even
 printEval(softEval)
 
 printEvalComparison(softEval, hardEval)
+
+beta <- 1
+F1_test <- (1+beta^2)*hardEval$precision*hardEval$recall/((beta^2 * hardEval$precision)+ hardEval$recall)
+F1_test
+
+
+
+#podem dar divisao por zero
+#sensitivity <- TPs/(TPs+FNs)
+#specificity <- TNs/(FPs+TNs)
+#e outras medidas precisam ser redefinidas
