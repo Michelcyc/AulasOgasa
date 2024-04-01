@@ -7,7 +7,6 @@ source("my_utils.R")
 data("har_examples")
 
 
-
 dataset <- har_examples[[4]]  #erro no F1
 #dataset <- har_examples[[11]]  #erro em vários
 
